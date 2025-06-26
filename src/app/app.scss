@@ -19,6 +19,21 @@ body {
   z-index: 1000;
 }
 
+.logo-img {
+  width:90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;        /* ✅ Makes it circle */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional cute glow */
+  transition: transform 0.3s ease;
+  margin-left: 20px;         /* Adjust if needed */
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+
 .logo-section {
   display: flex;
   align-items: center;
@@ -120,4 +135,9 @@ body {
 .add-btn:hover {
   background-color: #e91e63;
   transform: scale(1.05);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
 }
