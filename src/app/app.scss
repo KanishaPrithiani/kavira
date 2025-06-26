@@ -1,9 +1,10 @@
 /* 🌐 Global Styles */
-body {
+.body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-  color: #333;
+  // background: linear-gradient(135deg,#FDDADD);
+  background-color: #FDDADD;
+  color: #FDDADD;
 }
 
 /* 🧭 Navigation Bar */
@@ -18,21 +19,6 @@ body {
   top: 0;
   z-index: 1000;
 }
-
-.logo-img {
-  width:90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 50%;        /* ✅ Makes it circle */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional cute glow */
-  transition: transform 0.3s ease;
-  margin-left: 20px;         /* Adjust if needed */
-}
-
-.logo-img:hover {
-  transform: scale(1.05);
-}
-
 
 .logo-section {
   display: flex;
@@ -73,27 +59,27 @@ body {
 }
 
 /* 🖼 Grid Container */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  padding: 50px;
-  max-width: 1200px;
-  margin: auto;
-}
+// .grid-container {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+//   gap: 40px;
+//   padding: 50px;
+//   max-width: 1200px;
+//   margin: auto;
+// }
 
 /* 🖼 Card */
-.card {
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.2s ease;
-}
+// .card {
+//   border: none;
+//   border-radius: 16px;
+//   overflow: hidden;
+//   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+//   background-color: #ffffff;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   transition: transform 0.2s ease;
+// }
 
 .card:hover {
   transform: translateY(-5px);
@@ -102,18 +88,19 @@ body {
 /* 📏 Image Size */
 .card img {
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
 }
 
 /* 💰 Price + Button Row */
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 25px;
-  width: 100%;
-}
+// .card-footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 20px 25px;
+//   // width: %;
+//   height: 100%;
+// }
 
 .price {
   font-weight: bold;
@@ -137,7 +124,11 @@ body {
   transform: scale(1.05);
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-}
+// 💰 Price + Button Row */
+// .card-footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 20px 25px;
+//   width: 200%;
+// }
