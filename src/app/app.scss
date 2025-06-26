@@ -1,9 +1,10 @@
 /* 🌐 Global Styles */
-body {
+.body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-  color: #333;
+  // background: linear-gradient(135deg,#FDDADD);
+  background-color: #FDDADD;
+  color: #FDDADD;
 }
 
 /* 🧭 Navigation Bar */
@@ -18,21 +19,6 @@ body {
   top: 0;
   z-index: 1000;
 }
-
-.logo-img {
-  width:90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 50%;        /* ✅ Makes it circle */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional cute glow */
-  transition: transform 0.3s ease;
-  margin-left: 20px;         /* Adjust if needed */
-}
-
-.logo-img:hover {
-  transform: scale(1.05);
-}
-
 
 .logo-section {
   display: flex;
@@ -73,27 +59,27 @@ body {
 }
 
 /* 🖼 Grid Container */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  padding: 50px;
-  max-width: 1200px;
-  margin: auto;
-}
+// .grid-container {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+//   gap: 40px;
+//   padding: 50px;
+//   max-width: 1200px;
+//   margin: auto;
+// }
 
 /* 🖼 Card */
-.card {
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.2s ease;
-}
+// .card {
+//   border: none;
+//   border-radius: 16px;
+//   overflow: hidden;
+//   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+//   background-color: #ffffff;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   transition: transform 0.2s ease;
+// }
 
 .card:hover {
   transform: translateY(-5px);
@@ -102,18 +88,19 @@ body {
 /* 📏 Image Size */
 .card img {
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
 }
 
 /* 💰 Price + Button Row */
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 25px;
-  width: 100%;
-}
+// .card-footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 20px 25px;
+//   // width: %;
+//   height: 100%;
+// }
 
 .price {
   font-weight: bold;
@@ -137,99 +124,11 @@ body {
   transform: scale(1.05);
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-}
-
-/* 🌐 Navbar Base */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #fff;
-  padding: 15px 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-/* 🍃 Logo Styling */
-.logo-img {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-}
-
-.logo-img:hover {
-  transform: scale(1.05);
-}
-
-/* 🎯 Icon Navigation */
-.nav-icons {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
-
-.nav-icon i {
-  font-size: 22px;
-  color: #333;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.nav-icon:hover i {
-  color: #ff4081;
-  transform: scale(1.1);
-}
-
-/* 🎁 Dropdown Icon Container */
-.dropdown-icon {
-  position: relative;
-  cursor: pointer;
-}
-
-.dropdown-icon i {
-  font-size: 22px;
-  color: #333;
-  transition: all 0.2s ease;
-}
-
-.dropdown-icon:hover i {
-  color: #ff4081;
-  transform: scale(1.1);
-}
-
-/* 📋 Dropdown Menu */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 30px;
-  right: 0;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  min-width: 180px;
-  padding: 10px 0;
-  z-index: 10;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 10px 20px;
-  font-size: 0.95rem;
-  color: #444;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #f0fbf5;
-  color: #2e7d32;
-}
-
-// .dropdown-icon:hover .dropdown-content {
-//   display: block;
+// 💰 Price + Button Row */
+// .card-footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 20px 25px;
+//   width: 200%;
 // }

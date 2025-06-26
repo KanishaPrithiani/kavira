@@ -2,8 +2,9 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-  color: #333;
+  // background: linear-gradient(135deg,#FDDADD);
+  background-color: #FDDADD;
+  color: #FDDADD;
 }
 
 /* 🧭 Navigation Bar */
@@ -12,7 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background-color: #ffffff;
+  background-color: FDDADD;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
