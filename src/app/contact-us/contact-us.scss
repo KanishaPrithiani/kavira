@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 60px;
+  background-color: #f3fbe9;
+  min-height: 100vh;
+  gap: 40px;
+}
+
+/* Left section */
+.contact-form {
+  width: 600px;
+  background-color: #f3fbe9;
+}
+
+.contact-form h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #9c7a00;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #3d3d3d;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  background-color: #fff;
+  min-width: 48%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.file-label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.note {
+  font-size: 12px;
+  color: #555;
+}
+
+.submit-btn {
+  margin-bottom: 120px;
+  align-self: flex-start;
+  background-color: #f3fbe9;
+  color: #708238;
+  font-weight: bold;
+  border: 1px solid #708238;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #dfe9d0;
+}
+
+/* Right section */
+.contact-address {
+  width: 320px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 100px; /* 👈 push it down just like image */
+  border-left: 1px solid #ccc;
+  padding-left: 30px;
+}
+
+.address-box {
+  font-size: 14px;
+  color: #333;
+  line-height:1;
+}
