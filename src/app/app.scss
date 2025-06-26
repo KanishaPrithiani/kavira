@@ -1,0 +1,123 @@
+/* 🌐 Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  color: #333;
+}
+
+/* 🧭 Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+
+/* 🧭 Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff4081;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* 🏠 Heading */
+.page-heading {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2.5rem;
+  color: #2c2c2c;
+}
+
+/* 🖼 Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🖼 Card */
+.card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 📏 Image Size */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* 💰 Price + Button Row */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  width: 100%;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  background-color: #ff4081;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #e91e63;
+  transform: scale(1.05);
+}
