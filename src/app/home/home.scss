@@ -24,11 +24,12 @@ body {
 .logo-section {
   display: flex;
   align-items: center;
+  height: 1px;
 }
 
 .logo-img {
   height: 60px;
-  width: auto;
+  width: 100px;
 }
 
 /* 🧭 Navigation Links */
