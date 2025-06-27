@@ -13,8 +13,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background-color: FDDADD;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  color: rgb(228, 31, 31);
+  background-color: #c80c1c ; 
+  box-shadow: 0 4px 12px rgba(21, 2, 2, 0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -40,12 +41,12 @@ body {
 .nav-links a {
   text-decoration: none;
   font-weight: 600;
-  color: #333;
+  color: #ae2c2c;
   transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #ff4081;
+  color: #845a68;
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -54,8 +55,9 @@ body {
 .page-heading {
   text-align: center;
   margin: 40px 0 20px;
-  font-size: 2.5rem;
-  color: #2c2c2c;
+  font-size: 3.0rem;
+  color: #713B24;
+  font-family: Garamond, serif ;
 }
 
 /* 🖼 Grid Container */
@@ -79,6 +81,7 @@ body {
   flex-direction: column;
   align-items: center;
   transition: transform 0.2s ease;
+  height: 400px;
 }
 
 .card:hover {
@@ -87,9 +90,10 @@ body {
 
 /* 📏 Image Size */
 .card img {
-  width: 100%;
-  height: 220px;
+  width: 85%;
+  height: 320px;
   object-fit: cover;
+  padding-top: 3%;
 }
 
 /* 💰 Price + Button Row */
@@ -105,20 +109,26 @@ body {
   font-weight: bold;
   font-size: 1.2rem;
   color: #222;
+  padding-right: 8%;
+  padding-left: 3%;
 }
 
 .add-btn {
-  padding: 8px 16px;
-  background-color: #ff4081;
+  padding: 10px 15px;
+  background-color: #7F6169;
   border: none;
-  color: white;
+  color: #FFFCEF;
   border-radius: 20px;
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 2%;
 }
 
 .add-btn:hover {
-  background-color: #e91e63;
+  background-color: #570219;    // 4C1123
   transform: scale(1.05);
 }
+
+
+
