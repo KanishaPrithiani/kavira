@@ -51,7 +51,7 @@
 
 /* 🏠 Heading */
 .page-heading {
-  text-align: center;
+  text-align: left;
   margin: 40px 0 20px;
   font-size: 2.5rem;
   color: #d90d9c;
@@ -131,3 +131,17 @@
 //   padding: 20px 25px;
 //   width: 200%;
 // }
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.logo-circle {
+  width: 100px;               /* Adjust size */
+  height: 100px;
+  border-radius: 50%;         /* Makes it circular */
+  object-fit: cover;          /* Keeps image ratio inside circle */
+  border: 2px solid white;  /* Optional border color */
+  background-color: white;    /* Optional background */
+  margin-right: 10px;
+}
