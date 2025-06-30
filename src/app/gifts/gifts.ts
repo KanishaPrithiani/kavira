@@ -51,4 +51,5 @@ export class GiftsComponent {
   goBack() {
     this.selectedProduct = null;
   }
+
 }
