@@ -31,18 +31,19 @@
     style="font-size: 20; cursor: pointer; "
   ></i>
 
+  <div class="card" [routerLink]="['/category']">
   <ul
     class="dropdown-menu"
     [class.show]="isDropdownOpen"
     aria-labelledby="dropdownMenuIcon"
   >
-    <li><a class="dropdown-item" href="#">Choclates</a></li>
-    <li><a class="dropdown-item" href="#">Flowers</a></li>
-    <li><a class="dropdown-item" href="#">Cake</a></li>
-    <li><a class="dropdown-item" href="#">Watches</a></li>
-    <li><a class="dropdown-item" href="#">Candles</a></li>
+    <li><a class="dropdown-item" routerLink="category">Choclates</a></li>
+    <li><a class="dropdown-item" routerLink="category">Flowers</a></li>
+    <li><a class="dropdown-item" routerLink="category">Cake</a></li>
+    <li><a class="dropdown-item" routerLink="category">Candles</a></li>
   </ul>
 </div>
+  </div>
 
 
 
