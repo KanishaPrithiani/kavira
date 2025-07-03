@@ -79,3 +79,40 @@
   </div>
 </div> 
 
+
+<!-- This is your clickable card -->
+
+<div
+
+  class="card"
+
+  [routerLink]="['/product-detail']"
+
+  [queryParams]="{
+
+    image: 'assets/img6.png',
+
+    name: 'Baileys x SMOOR: Creamy Berries Chocolate Bar',
+
+    price: 295,
+
+    description: 'Delicious non-alcoholic creamy berry chocolate.',
+
+    ingredients: 'Milk solids, cocoa, sugar, berries',
+
+    storage: 'Store in cool, dry place',
+
+    weight: '50g'
+
+  }"
+
+>
+
+  <img src="assets/img6.png" alt="Product Image" />
+
+  <h3>Baileys x SMOOR</h3>
+
+  <p>₹295</p>
+
+</div>
+

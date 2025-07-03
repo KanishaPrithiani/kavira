@@ -1,22 +1,11 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-gifts',
-//   imports: [],
-//   templateUrl: './gifts.html',
-//   styleUrl: './gifts.scss'
-// })
-// export class Gifts {
-
-// }
-
-
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-gifts',
   templateUrl: './gifts.html',
-  styleUrls: ['./gifts.scss']
+  styleUrls: ['./gifts.scss'],
+  imports: [NgFor]
 })
 export class GiftsComponent {
   selectedProduct: any = null;

@@ -1,21 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { NgSelectModule } from '@ng-select/ng-select';
-
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, RouterLink, NgSelectModule],
-  standalone: true,  
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
+  standalone: true
 })
+
 export class App {
   protected title = 'Kavira';
+  private client = inject(HttpClient)
 
   constructor(
-    private router: Router
+    private router: Router,
   ) {}
 
     isDropdownOpen = false;
@@ -26,6 +28,16 @@ export class App {
 
   closeDropdown() {
     this.isDropdownOpen = false;
+  }
+
+  fetchData()
+  {
+    this.client.get('http://localhost:7979/getAllUsers')
+    .subscribe(
+      (data) => {
+        console.log(data)
+      }
+    )
   }
   
   giftOptions = [
