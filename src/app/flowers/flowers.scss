@@ -1,0 +1,169 @@
+// body {
+//   background-color: #fddadd;
+//   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//   margin: 0;
+// }
+
+// /* 🌸 Flower Card Grid */
+// .flower-grid {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+//   gap: 40px;
+//   padding: 50px;
+// }
+
+
+// /* 🌸 Flower Card */
+// .flower-card {
+//   width: 300px;
+//   background-color: #ffffff;
+//   border-radius: 20px;
+//   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+//   overflow: hidden;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   transition: transform 0.3s ease;
+// }
+
+// .flower-card:hover {
+//   transform: translateY(-5px);
+// }
+
+// /* 🌸 Flower Image */
+// .flower-card img {
+//   width: 100%;
+//   height: 320px;
+//   object-fit: cover;
+//   padding: 1.2em;
+//   border-radius: 2.5em;
+// }
+
+// /* 🌸 Footer (price + button) */
+// .flower-card-footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: left;
+//   background-color: #ffffff;
+//   width: 100%;
+//   padding: 20px 25px;
+//   border-top: 1px solid #eee;
+//   border-bottom-left-radius: 20px;
+//   border-bottom-right-radius: 20px;
+// }
+
+// /* 🌸 Price */
+// .price {
+//   font-size: 1.2rem;
+//   font-weight: bold;
+//   color: #222;
+// }
+
+// /* 🌸 Add to Cart Button */
+// .add-btn {
+//   background-color: #7F6169;
+//   color: #FFFCEF;
+//   border: none;
+//   border-radius: 20px;
+//   padding: 10px 20px;
+//   font-weight: 500;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease, transform 0.2s ease;
+// }
+
+// .add-btn:hover {
+//   background-color: #570219;
+//   transform: scale(1.05);
+
+
+
+
+/* 🌸 Global + Background */
+body {
+  background-color: #fddadd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+/* 🏷️ Page Heading */
+.page-heading {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 3rem;
+  color: #713B24;
+  font-family: Garamond, serif;
+}
+
+/* 🖼 Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 50px;
+  margin: auto;
+}
+
+/* 🌸 Card Design */
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+  height: 400px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 📷 Image Styling */
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  padding: 1em;
+  border-radius: 2.5em;
+}
+
+/* 💰 Price & Button */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.add-btn {
+  padding: 10px 15px;
+  background-color: #7F6169;
+  border: none;
+  color: #FFFCEF;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #570219;
+  transform: scale(1.05);
+}
+
+
