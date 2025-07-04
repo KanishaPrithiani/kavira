@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^20.0.0",
     "@angular/common": "^20.0.0",
     "@angular/compiler": "^20.0.0",
     "@angular/core": "^20.0.0",
@@ -22,6 +23,8 @@
     "@ng-select/ng-select": "^15.1.2",
     "bootstrap": "^5.3.7",
     "express": "^5.1.0",
+    "localstorage-polyfill": "^1.0.1",
+    "ngx-toastr": "^19.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },

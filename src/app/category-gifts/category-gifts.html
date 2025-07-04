@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <h2 class="text-center text-capitalize mb-4">Category: {{ categoryName }}</h2>
+
+  <div class="row">
+    <div *ngFor="let gift of gifts" class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img [src]="gift.imageUrl" class="card-img-top" alt="{{ gift.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ gift.name }}</h5>
+          <p class="card-text">{{ gift.description }}</p>
+          <span class="fw-bold text-danger">₹{{ gift.price }}</span>
+        </div>
+        <div class="card-footer bg-white text-end">
+          <button class="btn btn-outline-pink" (click)="addToCart(gift.id)">
+            <i class="fa fa-cart-plus me-1"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,29 +1,42 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { HttpClient } from '@angular/common/http';
+import { CommonModule, NgIf } from '@angular/common';
+import { Cart } from './cart';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, NgSelectModule],
+  imports: [RouterOutlet, RouterLink, NgSelectModule, NgIf, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.scss',
   standalone: true
 })
 
-export class App {
+export class App implements OnInit{
   protected title = 'Kavira';
   private client = inject(HttpClient)
+  private cartService = inject(Cart)
+  user: string | null = ''
+  
+  ngOnInit(): void {
+      this.user = localStorage.getItem("uname")
+      console.log("Here", this.user)
+  }
 
   constructor(
     private router: Router,
-  ) {}
+  ) {
+  }
 
+    cartCount$ = this.cartService.cartCount$;
     isDropdownOpen = false;
 
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;
+    console.log(this.user)
+    console.log(localStorage.getItem("uname"))
   }
 
   closeDropdown() {

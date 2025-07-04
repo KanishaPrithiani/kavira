@@ -1,0 +1,47 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">🛒 Your Cart</h2>
+
+  <div *ngIf="!cartItems" class="alert alert-info text-center">
+    Your cart is empty!
+  </div>
+
+  <div *ngIf="cartItems.length > 0">
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover align-middle">
+        <thead class="table-light text-center">
+          <tr>
+            <th>Image</th>
+            <th>Gift Name</th>
+            <th>Category</th>
+            <th>Price (₹)</th>
+            <th>Quantity</th>
+            <th>Subtotal (₹)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of cartItems">
+            <td><img [src]="item.Gift.imageUrl" alt="Gift Image" width="80" /></td>
+            <td>{{ item.Gift.name }}</td>
+            <td>{{ item.Gift.category }}</td>
+            <td class="text-end">{{ item.Gift.price }}</td>
+            <td class="text-center">{{ item.quantity }}</td>
+            <td class="text-end">{{ item.Gift.price * item.quantity }}</td>
+            <td class="text-center">
+              <button class="btn btn-danger btn-sm" (click)="removeItem(item.id)">
+                <i class="fa fa-trash"></i> Remove
+              </button>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5" class="text-end fw-bold">Total:</td>
+            <td class="text-end fw-bold">₹{{ totalAmount }}</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>

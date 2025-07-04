@@ -1,3 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --pink-bg: #fff0f5;
+  --pink-light: #ffe5ec;
+  --pink-medium: #ffccd5;
+  --pink-dark: #ff9aa2;
+}
 
+body {
+  background-color: var(--pink-bg);
+}
 
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 170, 180, 0.3);
+}
+
+.btn-pink {
+  background-color: var(--pink-dark);
+  color: white;
+}
+
+.btn-pink:hover {
+  background-color: #ff7b8a;
+}
+
+input.form-control:focus {
+  border-color: var(--pink-dark);
+  box-shadow: 0 0 0 0.2rem rgba(255, 154, 162, 0.25);
+}

@@ -1,10 +1,7 @@
-<!-- 🏠 Page Heading -->
-<h1 class="page-heading">Welcome to Kavira!</h1> 
+<!-- <h1 class="page-heading">Welcome to Kavira!</h1> 
 
- <!-- 🖼️ Image Grid -->
 <div class="grid-container">
   
-  <!-- Card 1 --> 
    <div class="card" [routerLink]="['/gifts']">
     <img src="assets/img1.png" alt="Product 1">
     <div class="card-footer">
@@ -13,7 +10,6 @@
     </div>
   </div>
 
-  <!-- Card 2 -->
   <div class="card" [routerLink]="['/gifts']">
     <img src="assets/img2.PNG" alt="Product 2">
     <div class="card-footer">
@@ -22,7 +18,6 @@
     </div>
   </div>
 
-  <!-- Card 3 -->
   <div class="card" [routerLink]="['/gifts']">
     <img src="assets/img3.PNG.png" alt="Product 3">
     <div class="card-footer">
@@ -31,7 +26,6 @@
     </div>
   </div>
 
-  <!-- Card 4 --> 
   <div class="card" [routerLink]="['/gifts']">
     <img src="assets/img4.png" alt="Product 4">
     <div class="card-footer">
@@ -40,7 +34,6 @@
     </div>
   </div>
 
-  <!-- Card 5 -->
   <div class="card" [routerLink]="['/gifts']">
     <img src="assets/img5.png" alt="Product 5">
     <div class="card-footer">
@@ -50,7 +43,6 @@
   </div>
 
 
-<!-- Card 6 -->
   <div class="card" [routerLink]="['/gifts']">
     <img src="assets/img6.png" alt="Product 6">
     <div class="card-footer">
@@ -59,7 +51,6 @@
     </div>
   </div>
 
-  <!-- Card 7 -->
   <div class="card" [routerLink]="['/gifts']">
     <img src="assets/img7.png" alt="Product 7">
     <div class="card-footer">
@@ -68,7 +59,6 @@
     </div>
   </div>
 
-<!-- Card 8 -->
   <div class="card" [routerLink]="['/gifts']">
     <img src="assets/img8.png" alt="Product 8">
     <div class="card-footer">
@@ -76,43 +66,43 @@
       <button class="add-btn">Add to Cart</button>
     </div>
   </div>
-</div> 
+</div>  -->
 
+<!-- 🏠 Page Heading -->
+<h1 class="page-heading text-center my-4" style="color: #d63384;">Welcome to Kavira!</h1> 
 
-<!-- This is your clickable card -->
-
-<div
-
-  class="card"
-
-  [routerLink]="['/product-detail']"
-
-  [queryParams]="{
-
-    image: 'assets/img6.png',
-
-    name: 'Baileys x SMOOR: Creamy Berries Chocolate Bar',
-
-    price: 295,
-
-    description: 'Delicious non-alcoholic creamy berry chocolate.',
-
-    ingredients: 'Milk solids, cocoa, sugar, berries',
-
-    storage: 'Store in cool, dry place',
-
-    weight: '50g'
-
-  }"
-
->
-
-  <img src="assets/img6.png" alt="Product Image" />
-
-  <h3>Baileys x SMOOR</h3>
-
-  <p>₹295</p>
-
+<!-- 🖼️ Image Grid -->
+<!-- 🖼️ Image Grid -->
+<div class="grid-container">
+  <div class="card" *ngFor="let gift of gifts" (click)="openGiftModal(gift)">
+    <img [src]="gift.imageUrl" [alt]="gift.name">
+    <div class="card-footer">
+      <span class="price">₹{{ gift.price }}</span>
+      <button class="add-btn btn btn-pink btn-sm" (click)="addToCart(gift); $event.stopPropagation()">Add to Cart</button>
+    </div>
+  </div>
 </div>
 
-
+<!-- 🎁 Gift Detail Modal -->
+<div class="modal fade" id="giftModal" tabindex="-1" aria-labelledby="giftModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="background-color: #fff0f5;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="giftModalLabel">{{ selectedGift?.name }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img [src]="selectedGift?.imageUrl" [alt]="selectedGift?.name" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6">
+          <p><strong>Category:</strong> {{ selectedGift?.category }}</p>
+          <p><strong>Description:</strong> {{ selectedGift?.description }}</p>
+          <p><strong>Stock:</strong> {{ selectedGift?.stock }}</p>
+          <p class="h5 text-pink"><strong>Price:</strong> ₹{{ selectedGift?.price }}</p>
+          <button class="btn btn-pink mt-2" (click)="addToCart(selectedGift)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
