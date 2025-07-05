@@ -16,7 +16,8 @@ export class UserCart {
   constructor(private cartService: Cart) {}
 
   ngOnInit(): void {
-    this.loadCart();
+      this.cartItems = [];
+      this.loadCart();
   }
 
   loadCart() {
@@ -24,6 +25,7 @@ export class UserCart {
       console.log(items)
       this.cartItems = items;
       this.calculateTotal();
+      console.log(this.cartItems)
     });
   }
 
